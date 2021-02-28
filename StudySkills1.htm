@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Rob Venable | Preparing Students for a Successful Middle School Experience
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="css/Reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/Icons.css" rel="stylesheet" type="text/css" />
+    <link href="css/style_slider.css" rel="stylesheet" type="text/css" />
+    <link href="css/Style.css" rel="stylesheet" type="text/css" />
+    <link href="//fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/Navigation.js" type="text/javascript"></script>
+</head>
+<script type="text/javascript">
+    function validatePage() {
+        if (document.getElementById("txt_StudentName").value == "") {
+            alert("Please enter a value for \"Student Name\"");
+            document.getElementById("txt_StudentName").focus();
+            return false;
+        }
+        if (document.getElementById("txt_ParentName").value == "") {
+            alert("Please enter a value for \"Parent/Guardian's Name\"");
+            document.getElementById("txt_ParentName").focus();
+            return false;
+        }
+        if (document.getElementById("txt_ParentEmail").value == "") {
+            alert("Please enter a value for \"Parent/Guardian's Email\"");
+            document.getElementById("txt_ParentEmail").focus();
+            return false;
+        }
+        if (validateEmail(document.getElementById("txt_ParentEmail").value) == false) {
+            alert("Please enter email address in the correct format (ex: example@email.com)");
+            document.getElementById("txt_ParentEmail").focus();
+            return false;
+        }
+        if (document.getElementById("ddl_StudentWorkshopDate").value == "-- Select One --") {
+            alert("Please select a value for \"Student Workshop Date\"");
+            document.getElementById("ddl_StudentWorkshopDate").focus();
+            return false;
+        }
+        //SOLD OUT DATES CHECK
+        //if (document.getElementById("ddl_StudentWorkshopDate").value == "July 27 - 30, 9:00am - 10:30am" ||
+        //document.getElementById("ddl_StudentWorkshopDate").value == "Aug 3 - 6, 9:00am - 10:30am") {
+        //    alert("The Student Workshop Date you selected is sold out. Please select another date.");
+        //    document.getElementById("ddl_StudentWorkshopDate").focus();
+        //    return false;
+        //}
+        if (document.getElementById("ddl_ParentWorkshopDate").value == "-- Select One --") {
+            alert("Please select a value for \"Parent Workshop Date\"");
+            document.getElementById("ddl_ParentWorkshopDate").focus();
+            return false;
+        }
+        if (document.getElementById("txt_EmergencyContact").value == "") {
+            alert("Please enter a value for \"Emergency Contact Name and Phone Number\"");
+            document.getElementById("txt_EmergencyContact").focus();
+            return false;
+        }
+        if (document.getElementById("ddl_ReceiveEmail").value == "-- Select One --") {
+            alert("Please select an option for receiving a parent blog email");
+            document.getElementById("ddl_ReceiveEmail").focus();
+            return false;
+        }
+        if (document.getElementById("ddl_ParentWorkshopDate").value == "Not Attending") {
+            document.getElementById("ddl_Workshops").value = "Student Only";
+        }
+        else {
+            document.getElementById("ddl_Workshops").value = "Parent & Student";
+        }
+
+    }
+    function validateEmail(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    } 
+
+</script>
+<style type="text/css">
+    .StudySkillsMain .Content
+    {
+     padding: 0;  
+     border-bottom: 0;
+    }
+</style>
+<body>
+    <div id="Body">
+        <div class="StudySkillsMain">
+            <div class="Content">
+                <div class="AboutSection" style="padding: 0 10px 0 70px;">
+                    <h1 style="padding-bottom: 0;">
+                        Study Skills Workshops</h1>
+                    <!--<h2>
+                        with Rob Venable</h2>-->
+                    <br />
+                    <h2>
+                        Registration Form - Summer 2021</h2>
+                    <br />
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_xclick">
+                    <input type="hidden" name="business" value="rob@robvenable.com">
+                    <input type="hidden" name="lc" value="US">
+                    <input type="hidden" name="item_name" value="Study Skills Workshop with Rob Venable">
+                    <!--<input type="hidden" name="amount" value="175.00">
+                    <input type="hidden" name="currency_code" value="USD">-->
+                    <input type="hidden" name="button_subtype" value="services">
+                    <input type="hidden" name="no_note" value="0">
+                    <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_SM.gif:NonHostedGuest">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="hidden" name="option_select0" value="Student Only">
+                    <input type="hidden" name="option_amount0" value="150.00">
+                    <input type="hidden" name="option_select1" value="Parent & Student">
+                    <input type="hidden" name="option_amount1" value="150.00">
+                    <input type="hidden" name="option_index" value="7">
+                    <div class="divForm">
+                        <table class="tblForm">
+                            <tr>
+                                <td class="formLabel">
+                                    <input type="hidden" name="on1" value="Student">Student's Name:
+                                </td>
+                                <td>
+                                    <input id="txt_StudentName" type="text" name="os1" maxlength="200">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="formLabel">
+                                    <input type="hidden" name="on2" value="Parent/Guardian">Parent/Guardian's Name:
+                                </td>
+                                <td>
+                                    <input id="txt_ParentName" type="text" name="os2" maxlength="200">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="formLabel">
+                                    <input type="hidden" name="on3" value="Parent/Guardian Email">Parent/Guardian's
+                                    Email:
+                                </td>
+                                <td>
+                                    <input id="txt_ParentEmail" type="text" name="os3" maxlength="200">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="formLabel">
+                                    Cost:
+                                </td>
+                                <td>
+                                    $150 for student workshop<br />
+                                    Parent workshop is free
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="divForm">
+                        <table class="tblForm">
+                            <tr>
+                                <td colspan="2">
+                                    <span class="formBold">Student Workshop Dates:</span><br />
+                                    Please choose the class you would like your child/children to attend by selecting
+                                    your desired date/time. The workshop is completed in four days. You are choosing
+                                    one week and either the first or second session of that week. <!--<span style="font-style: italic;">
+                                        (Space is limited to 15 participants per class) </span>-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="formLabel" style="width: 220px;">
+                                    <input type="hidden" name="on0" value="Student Workshop Date">Select Date & Time:
+                                </td>
+                                <td>
+                                    <select id="ddl_StudentWorkshopDate" name="os0" class="formDDL">
+                                        <option value="-- Select One --">-- Select One -- </option>
+                                        <option value="July 19 - 22, 2:00pm - 3:30pm">July 19 - 22, 2:00pm - 3:30pm </option>
+                                        <option value="July 26 - 29, 9:00am - 10:30am">July 26 - 29, 9:00am - 10:30am</option>
+                                        <option value="July 26 - 29, 11:00am - 12:30pm">July 26 - 29, 11:00am - 12:30pm </option>
+                                        <option value="Aug 2 - 5, 9:00am - 10:30am">Aug 2 - 5, 9:00am - 10:30am</option>
+                                        <option value="Aug 2 - 5, 11:00am - 12:30pm">Aug 2 - 5, 11:00am - 12:30pm </option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <span class="formBold">Location:</span><br />
+                                    LCMS<br/>
+                                    1950 Woodruff Rd.<br/>
+                                    Greenville, SC 29607
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <span class="formBold">Parent Workshop Dates:</span> (optional)
+                                    <br />
+                                    Please choose the workshop date you would like to attend. <span style="font-style: italic;">
+                                        (Both workshops are from 6:00pm-7:30pm.)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="formLabel" style="width: 220px;">
+                                    <input type="hidden" name="on4" value="Parent Workshop Date">Select Date:
+                                </td>
+                                <td>
+                                    <select id="ddl_ParentWorkshopDate" name="os4" class="formDDL">
+                                        <option value="-- Select One --">-- Select One -- </option>
+                                        <!--<option value="Dates Coming Soon!">Dates Coming Soon!</option>-->
+                                        <option value="Thursday, July 29th">Thursday, July 29th</option>
+                                        <option value="Tuesday, August 3rd">Tuesday, August 3rd</option>
+                                        <option value="Not Attending">Not Attending</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="divForm">
+                        <table class="tblForm">
+                            <tr>
+                                <td class="formLabel">
+                                    <input type="hidden" name="on5" value="Emergency Contact">Emergency Contact Name
+                                    and Phone Number:
+                                </td>
+                                <td>
+                                    <input id="txt_EmergencyContact" type="text" name="os5" maxlength="200">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="hidden" name="on6" value="Parent Blog Email">
+                                    <span style="font-weight: bold;">Would you like to receive an e-mail regarding my upcoming
+                                        study skills parent blog?</span><br />
+                                    (Your e-mail will remain private, and I will not share it with another party.)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <select id="ddl_ReceiveEmail" name="os6" class="formDDL">
+                                        <option value="-- Select One --">-- Select One -- </option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br /> 
+                    <div style="text-align: center;">
+                        <input type="image" class="RegisterBtn" src="http://www.vanderbilt.edu/emipmc2016/images/Register-Now-Button-Orange.jpg"
+                        border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"
+                            onclick="return validatePage();">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+                            width="1" height="1">
+                    </div>
+                    <!--Hidden dropdown list to track selection-->
+                    <input type="hidden" name="on7" value="Workshops">
+                    <select id="ddl_Workshops" name="os7" class="formDDL" style="visibility: hidden;">
+                        <option value="Student Only">Student Only: $150.00</option>
+                        <option value="Parent & Student">Parent & Student: $150.00</option>
+                    </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
