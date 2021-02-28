@@ -1,0 +1,644 @@
+﻿BODY
+{
+    font-family: 'Lato' , Arial, Verdana, Sans-Serif;
+    overflow-x: hidden;
+}
+A
+{
+    text-decoration: none;
+}
+input[type=text]
+{
+    padding: 3px;
+    font: inherit;
+    font-size: 16px;
+}
+#Header
+{
+    width: 100%;
+    text-align: center;
+    /*border-bottom: 1px solid #ddd;*/
+    position: fixed;
+    background-color: #fff;
+    z-index: 100;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+#HeaderContent
+{
+    width: 100%;
+    max-width: 960px;
+    text-align: center;
+    display: inline-block;
+}
+#HeaderContent IMG
+{
+    height: 82px;
+}
+#Footer
+{
+    height: 370px;
+    background-color: #555;
+    color: White;
+    width: 100%;
+    text-align: center;
+}
+#FooterContent
+{
+    padding: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+#FooterContent DIV:not(.contactIcon):not(.Logo):not(.RobV)
+{
+    display: inline-block;
+    padding: 20px 0;
+    width: 33%;
+}
+    #FooterContent A
+    {
+        color: #fff;
+    }
+.contactIcon
+{
+    font-size: 50px;
+    padding: 30px;
+}
+#MenuList
+{
+    display: inline;
+}
+.menuItem
+{
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
+    margin: 20px;
+    color: #111;
+    font-size: 20px;
+}
+.menuItem:hover
+{
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #80c0ff;
+}
+.menuItem SPAN
+{
+     font-size: 10px; margin-top: 3px; color: #ccc; text-transform: uppercase;
+}
+#Body
+{
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-bottom: 50px;
+    background-color: #fff;
+}
+h1
+{
+    font-size: 40px;
+    padding-bottom: 20px;
+    line-height: 1em;
+    color: #E6B85C;
+}
+h2
+{
+    font-size: 25px;
+    color: #555;
+}
+hr 
+{ display: block; height: 1px;
+    border: 0; border-top: 1px solid #ccc;
+    margin: 1em 0; padding: 0; 
+}
+.Logo
+{
+    display: inline-block;
+    text-transform: uppercase;
+    vertical-align: top;
+    padding: 10px;
+    /*margin-right: 20px;*/
+}
+.RobV
+{
+    font-family: 'Lato', 'Oswald', Trebuchet MS, Sans-Serif;  
+    font-weight: 400;  
+    font-size: 43px;
+    color: #555;
+}
+.PFMS
+{
+    font-family: Tahoma, 'Lato', Sans-Serif;
+    font-size: 12px;
+    color: #ccc;
+    padding-top: 5px;
+}
+.SubLogo
+{
+     color: #888; font-size: 16px; text-transform: uppercase; line-height: 2;
+}
+.goBtn
+{
+    background-color: #2e9afe;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    margin: 20px;
+}
+.goBtn:hover, .goTop:hover
+{
+    background-color: #80c0ff;
+}
+.menuBtn
+{
+    display: none;
+    cursor: pointer;
+    margin: 20px;
+    color: #999;
+    vertical-align: top;
+    font-size: 30px;
+    float: left;
+    z-index: 500; 
+    position: relative; 
+    border: solid 1px #ccc; 
+    border-radius: 3px;
+}
+#FooterContent A:hover
+{
+    color: #80c0ff;
+}
+.actionBtn
+{
+    background-color: #2e9afe; /*#66C285;*/
+    width: 150px;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 20px !important;
+}
+.actionBtn:hover
+{
+    background-color: #80c0ff; /*#529B6A;*/
+}
+/*scroll top button*/
+.goTop
+{
+    display: none;
+    bottom: 30px;
+    right: 70px;
+    width: 30px;
+    border-radius: 100%;
+    position: fixed;
+    padding: 10px;
+    background-color: #999;
+    cursor: pointer;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; /* IE 8 */
+    filter: alpha(opacity=80); /* IE 5-7 */
+    -moz-opacity: 0.8; /* Netscape */
+    -khtml-opacity: 0.8; /* Safari 1.x */
+    opacity: 0.8;
+}
+.arrow-up
+{
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #eeeeee;
+    cursor: pointer;
+    margin: 8px auto;
+}
+.StudySkillsMain
+{
+    width: 100%;
+    color: #222;
+}
+.StudySkillsMain .Content
+{
+    width: 85%;
+    max-width: 998px;
+    margin: 0 auto;
+    padding: 150px 40px 150px 40px;
+    border-bottom: 1px solid #ccc;
+}
+.TopArticle .Content
+{
+    padding-top: 10px;
+}
+.Content .Split
+{
+    width: 45%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+}
+.Content .Split DIV
+{
+    padding: 20px;
+}
+.Split IMG
+{
+    width: 90%;
+    max-width: 320px;
+}
+#IsChildReadyImg
+{
+    background: url(../img/chalkboardImgTxt.jpg) no-repeat center;
+    height: 490px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#NoteTakingImg
+{
+    background: url(../img/note.taking.4.jpg) no-repeat center;
+    height: 400px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#OrganizationImg
+{
+    background: url(../img/organization.2.jpg) no-repeat center;
+    height: 400px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#TimeManagementImg
+{
+    background: url(../img/paint-clock.jpg) no-repeat center;
+    height: 400px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#HandsUpImg
+{
+    background: url(../img/handsUpImg.jpg) no-repeat center;
+    height: 400px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.MobileOnly, .MobileBoth
+{
+    display: none !important;
+}
+.MobileHide
+{
+    display: inline-block !important;
+}
+.Portrait
+{
+     width: 90%; 
+     max-width: 350px !important;
+     box-shadow: 2px 2px 3px #777;
+     border-radius: 5px;
+     margin-right: 20px;
+}
+.AboutSection
+{
+     padding: 0 40px 0 70px; margin: 0 auto;
+}
+.AboutInfo
+{
+    padding-left: 70px !important;
+}
+.subText
+{
+     color: #777; font-size: 14px;
+}
+#IsChildReadyImg, #NoteTakingImg, #OrganizationImg, #TimeManagementImg, #HandsUpImg
+{
+    display: none;
+}
+.currentPage
+{
+    border-bottom: 3px solid #80c0ff;
+}
+.divForm
+{
+    background-color: #ddd; width: 95%; padding: 20px 10px; box-shadow: 3px 3px 5px #555; margin-bottom: 20px;
+}
+.tblForm
+{
+    
+}
+.tblForm td
+{
+    padding: 5px 10px;
+}
+.tblForm input
+{
+    width: 300px;
+}
+.formDDL
+{
+    font: inherit; font-size: 14px; padding: 5px 7px; margin-left: -1px;
+}
+.formLabel
+{
+    font-weight: bold;
+}
+.formBold
+{
+    text-decoration: underline; font-weight: bold;
+}
+.RegisterBtn
+{
+    width: 200px; border: 0; outline: none;
+}
+.comingSoon
+{
+    color: #999;
+    font-size: 50px;
+    text-align: center;
+    padding: 50px 0;
+    font-family: 'Oswald', 'Lato', Arial, Sans-Serif;
+}
+.btnOn
+{
+    color: #80c0ff !important;
+}
+.WrkSessions
+{
+     text-align: center; background-color: #e7e7e7; padding-top: 10px; padding-bottom: 10px; margin-top: 40px;
+}
+.Testimonial
+{
+    background: url(../img/paperBG.jpg);
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+	background-size: cover;
+    padding: 20px;
+    box-shadow: 3px 3px 5px #555;
+    margin-bottom: 50px;
+}
+.hrefLink
+{
+    color: #336699;
+}
+.workshopDate
+{
+    margin-left: 61px;
+}
+.orGap
+{
+    margin-left: 120px;
+}
+@media screen and (max-width: 960px)
+{
+    .menuItem
+    {
+        margin-right: 8px;
+    }   
+}
+@media screen and (max-width: 900px)
+{
+    #Footer
+    {
+        padding-bottom: 85px;
+    }
+    #FooterContent
+    {
+        padding: 10px 10px;
+    }
+    #FooterContent DIV:not(.contactIcon):not(.Logo):not(.RobV)
+    {
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+    }
+    .contactIcon
+    {
+        font-size: 25px;
+        padding: 10px;
+    }
+    #Header
+    {
+        height: 83px;
+    }
+    #HeaderContent IMG
+    {
+        margin-left: -35px;
+    }
+    #MenuList
+    {
+        margin-left: -100%;
+        top:83px;
+        left: 0;
+        position: absolute;
+        height: 1200px;
+        width: 70%;
+        max-width: 360px;
+        background-color: #333;
+        font-size: 20px; 
+        -webkit-transition: ease-out 0.3s;
+        transition: ease-out 0.3s; 
+    }
+    .MenuToggle
+    {
+        margin-left: 0 !important;
+    }
+    .BodyToggle
+    {
+        opacity: .50;
+        -webkit-transition: ease-out 0.6s;
+        transition: ease-out 0.6s;
+    }
+    .menuItem
+    {
+        display: block;
+        color: #fff;
+        text-align: left;
+        max-width: 100px;
+    }
+    .menuItem SPAN
+    {
+        color: #999;
+    }
+    .menuBtn
+    {
+        display: inline-block;
+    }
+    .goTop
+    {
+        right: 20px;
+        bottom: 20px;
+    }
+    .Content .Split DIV
+    {
+        padding: 0;
+    }
+    .AboutSection, .AboutInfo
+    {
+         padding: 0 30px;
+    }
+    .AboutInfo
+    {
+         padding: 0 30px 30px !important;
+    }
+    #slide-holder DIV#slide-runner 
+    {
+        height: 275px;
+    }
+        .slidecontainer
+    {
+        height: 350px;
+    }
+    #slide-holder DIV#slide-controls
+    {
+        display: none !important;
+    }
+    .currentPage
+    {
+        border: 0;
+    }
+        .tblForm td
+    {
+        display: block;
+    }
+    .tblForm input
+    {
+        width: 90%;
+    }
+    #slide-holder DIV#slide-runner
+    {
+        box-shadow: none ;
+    }
+        .MobileBoth
+    {
+        display: block !important;
+    }
+    .TopArticle .Content
+    {
+        padding-top: 100px;
+    }
+}
+@media screen and (max-width: 580px)
+{
+    #slide-holder DIV#slide-runner 
+    {
+        height: 225px;
+    }   
+        .slidecontainer
+    {
+        height: 300px;
+    }
+    .Portrait
+    {
+        margin-right: 0;
+    }
+    #MainSlider
+    {
+        display: none;
+    }
+    .Logo
+    {
+        
+    }
+    .RobV
+    {
+        font-size: 38px;
+    }
+    .PFMS
+    {
+        font-size: 10px;
+        padding-top: 4px;
+    }
+    .SubLogo
+    {
+        font-size: 14px;
+    }
+    #MenuList
+    {
+        top: 65px;
+    }
+    .menuBtn
+    {
+        margin: 10px 0 10px 15px;
+    }
+    #HeaderContent IMG, #Header
+    {
+        height: 65px;
+    }
+    .StudySkillsMain .Content
+    {
+        width: 85%;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 40px 20px 40px 20px;
+        border: 0;
+    }
+    .Content .Split
+    {
+        width: 100%;
+        display: block;
+        padding: 20px 0 20px 0;
+        margin: 0;
+    }
+    .Split IMG
+    {
+        width: 70%;
+        max-width: 250px;
+    }
+    #IsChildReadyImg
+    {
+        height: 310px;
+        display: block;
+    }
+    #NoteTakingImg, #OrganizationImg, #TimeManagementImg, #HandsUpImg
+    {
+        height: 220px;
+        display: block;        
+    }
+    .MobileHide
+    {
+        display: none !important;
+    }
+    .MobileOnly
+    {
+        display: block !important;
+    }
+    .Portrait
+    {
+        width: 99%;
+    }
+    .AboutSection, .AboutInfo
+    {
+         padding: 0 !important;
+    }
+    #slide-holder DIV#slide-runner 
+    {
+        height: 175px;
+    }
+    .slidecontainer
+    {
+        height: 250px;
+    }
+        #slide-holder DIV#slide-runner 
+    {
+        top: 80px;
+    }
+    .WrkSessions
+    {
+        margin-top: 0;
+    }
+    .workshopDate
+    {
+        margin-left: 0;
+    }
+    .orGap
+    {
+        margin-left: 50px;
+    }
+}
+
