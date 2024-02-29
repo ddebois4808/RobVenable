@@ -110,7 +110,7 @@
                         <input type="hidden" name="currency_code" value="USD">
                         <input type="hidden" name="option_select0" value="Student Only">
                         <script>
-                            document.write(`<input type="hidden" name="option_amount0" value=${HighSchoolPrice()}>`)
+                            document.write(`<input type="hidden" name="option_amount0" value="${HighSchoolPrice()}">`)
                         </script>
                         <input type="hidden" name="option_index" value="7">
                         <div class="divForm">
@@ -146,7 +146,7 @@
                                     </td>
                                     <td>
                                         <script>
-                                            document.write(`${HighSchoolPrice()} for student workshop<br />`)
+                                            document.write(`$${HighSchoolPrice()} for student workshop<br />`)
                                         </script>
                                     </td>
                                 </tr>
@@ -174,7 +174,7 @@
                                             <script>
                                                 let dates = HighSchoolDates()
                                                 dates.forEach(dateDetails => {
-                                                    document.write(`<option value=${dateDetails}>${dateDetails}</option>`)
+                                                    document.write(`<option value="${dateDetails}">${dateDetails}</option>`)
                                                 });
                                             </script>
                                         </select>
@@ -241,7 +241,7 @@
                         <input type="hidden" name="on7" value="Workshops">
                         <select id="ddl_Workshops" name="os7" class="formDDL" style="visibility: hidden;">
                             <script>
-                                document.write(`<option value="Student Only">Student Only: ${HighSchoolPrice()}</option>`)
+                                document.write(`<option value="Student Only">Student Only: $${HighSchoolPrice()}</option>`)
                             </script>
                         </select>
                     </form>

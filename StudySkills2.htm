@@ -107,11 +107,11 @@
                     <input type="hidden" name="currency_code" value="USD">
                     <input type="hidden" name="option_select0" value="Student Only">
                     <script>
-                        document.write(`<input type="hidden" name="option_amount0" value=${StudySkills2Price()}>`)
+                        document.write(`<input type="hidden" name="option_amount0" value="${StudySkills2Price()}">`)
                     </script>
                     <input type="hidden" name="option_select1" value="Parent & Student">
                     <script>
-                        document.write(`<input type="hidden" name="option_amount1" value=${StudySkills2Price()}>`)
+                        document.write(`<input type="hidden" name="option_amount1" value="${StudySkills2Price()}">`)
                     </script>
                     <input type="hidden" name="option_index" value="7">
                     <div class="divForm">
@@ -147,7 +147,7 @@
                                 </td>
                                 <td>
                                     <script>
-                                        document.write(`${StudySkills2Price()} for student workshop<br />`)
+                                        document.write(`$${StudySkills2Price()} for student workshop<br />`)
                                     </script>
                                     Parent workshop is free
                                 </td>
@@ -174,7 +174,7 @@
                                         <script>
                                             let dates = StudySkills2Dates()
                                             dates.forEach(dateDetails => {
-                                                document.write(`<option value=${dateDetails}>${dateDetails}</option>`)
+                                                document.write(`<option value="${dateDetails}">${dateDetails}</option>`)
                                             });
                                         </script>
                                     </select>
@@ -215,7 +215,7 @@
                                         <script>
                                             let parentWorkshopDates = ParentWorkshopDates()
                                             parentWorkshopDates.forEach(dateDetails => {
-                                                document.write(`<option value=${dateDetails}>${dateDetails}</option>`)
+                                                document.write(`<option value="${dateDetails}">${dateDetails}</option>`)
                                             });
                                         </script>
                                     </select>
@@ -265,8 +265,8 @@
                     <input type="hidden" name="on7" value="Workshops">
                     <select id="ddl_Workshops" name="os7" class="formDDL" style="visibility: hidden;">
                         <script>
-                            document.write(`<option value="Student Only">Student Only: ${StudySkills2Price()}</option>`)
-                            document.write(`<option value="Parent & Student">Parent & Student: ${StudySkills2Price()}</option>`)
+                            document.write(`<option value="Student Only">Student Only: $${StudySkills2Price()}</option>`)
+                            document.write(`<option value="Parent & Student">Parent & Student: $${StudySkills2Price()}</option>`)
                         </script>
                     </select>
                     </form>

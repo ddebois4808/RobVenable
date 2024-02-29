@@ -33,14 +33,14 @@ function ParentWorkshopDates() {
 
 function StudySkills1Price()
 {
-    return '$200.00'
+    return '200.00'
 }
 
 function StudySkills2Price()
 {
     let today = new Date().getTime();
     let priceExpire = new Date('06/01/2024').getTime();
-    return today > priceExpire ? '$165.00' : '$150.00'
+    return today > priceExpire ? '165.00' : '150.00'
 }
 
 function HighSchoolPrice()

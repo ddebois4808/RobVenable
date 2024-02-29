@@ -95,8 +95,6 @@
                 <div class="AboutSection" style="padding: 0 10px 0 70px;">
                     <h1 style="padding-bottom: 0;">
                         Study Skills Workshops</h1>
-                    <!--<h2>
-                        with Rob Venable</h2>-->
                     <br />
                     <h2>
                         Registration Form - Summer
@@ -116,11 +114,11 @@
                         <input type="hidden" name="currency_code" value="USD">
                         <input type="hidden" name="option_select0" value="Student Only">
                         <script>
-                            document.write(`<input type="hidden" name="option_amount0" value=${StudySkills1Price()}>`)
+                            document.write(`<input type="hidden" name="option_amount0" value="${StudySkills1Price()}">`)
                         </script>
                         <input type="hidden" name="option_select1" value="Parent & Student">
                         <script>
-                            document.write(`<input type="hidden" name="option_amount1" value=${StudySkills1Price()}>`)
+                            document.write(`<input type="hidden" name="option_amount1" value="${StudySkills1Price()}">`)
                         </script>
                         <input type="hidden" name="option_index" value="7">
                         <div class="divForm">
@@ -156,7 +154,7 @@
                                     </td>
                                     <td>
                                         <script>
-                                            document.write(`${StudySkills1Price()} for student workshop<br />`)
+                                            document.write(`$${StudySkills1Price()} for student workshop<br />`)
                                         </script>
                                         Parent workshop is free
                                     </td>
@@ -185,7 +183,7 @@
                                             <script>
                                                 let dates = StudySkills1Dates()
                                                 dates.forEach(dateDetails => {
-                                                    document.write(`<option value=${dateDetails}>${dateDetails}</option>`)
+                                                    document.write(`<option value="${dateDetails}">${dateDetails}</option>`)
                                                 });
                                             </script>
                                         </select>
@@ -225,7 +223,7 @@
                                             <script>
                                                 let parentWorkshopDates = ParentWorkshopDates()
                                                 parentWorkshopDates.forEach(dateDetails => {
-                                                    document.write(`<option value=${dateDetails}>${dateDetails}</option>`)
+                                                    document.write(`<option value="${dateDetails}">${dateDetails}</option>`)
                                                 });
                                             </script>
                                         </select>
@@ -269,17 +267,17 @@
                         <div style="text-align: center;">
                             <input type="image" class="RegisterBtn"
                                 src="http://www.vanderbilt.edu/emipmc2016/images/Register-Now-Button-Orange.jpg"
-                                border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"
+                                name="submit" alt="PayPal - The safer, easier way to pay online!"
                                 onclick="return validatePage();">
-                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
+                            <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
                                 height="1">
                         </div>
                         <!--Hidden dropdown list to track selection-->
                         <input type="hidden" name="on7" value="Workshops">
                         <select id="ddl_Workshops" name="os7" class="formDDL" style="visibility: hidden;">
                             <script>
-                                document.write(`<option value="Student Only">Student Only: ${StudySkills1Price()}</option>`)
-                                document.write(`<option value="Parent & Student">Parent & Student: ${StudySkills1Price()}</option>`)
+                                document.write(`<option value="Student Only">Student Only: $${StudySkills1Price()}</option>`)
+                                document.write(`<option value="Parent & Student">Parent & Student: $${StudySkills1Price()}</option>`)
                             </script>
                         </select>
                     </form>
