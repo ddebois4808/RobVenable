@@ -25,8 +25,8 @@ function HighSchoolDates() {
 function ParentWorkshopDates() {
     return [
         '-- Select One --',
-        'Thursday, July 20 (6:00 - 7:30)',
-        'Wednesday, July 26 (6:00 - 7:30)',
+        'Thursday, July 18 (6:00pm - 7:30pm)',
+        'Tuesday, July 23 (6:00pm - 7:30pm)',
         'Not Attending',
     ]
 }
