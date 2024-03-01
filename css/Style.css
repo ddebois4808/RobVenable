@@ -97,10 +97,11 @@ input[type=text]
 }
 h1
 {
-    font-size: 40px;
-    padding-bottom: 20px;
+    font-size: 42px;
     line-height: 1em;
-    color: #E6B85C;
+    color: #fff;
+    letter-spacing: 0.06em;
+    /* font-family: worksans-extralight,work sans,sans-serif; */
 }
 h2
 {
@@ -219,7 +220,7 @@ hr
     width: 85%;
     max-width: 998px;
     margin: 0 auto;
-    padding: 150px 40px 150px 40px;
+    padding: 20px 40px 150px 40px;
     border-bottom: 1px solid #ccc;
 }
 .TopArticle .Content
@@ -303,10 +304,10 @@ hr
      border-radius: 5px;
      margin-right: 20px;
 }
-.AboutSection
+/* .AboutSection
 {
      padding: 0 40px 0 70px; margin: 0 auto;
-}
+} */
 .AboutInfo
 {
     padding-left: 70px !important;
@@ -325,7 +326,7 @@ hr
 }
 .divForm
 {
-    background-color: #ddd; width: 95%; padding: 20px 10px; box-shadow: 3px 3px 5px #555; margin-bottom: 20px;
+    background-color: #efefef; width: 95%; padding: 20px 10px; box-shadow: 3px 3px 5px #555; margin-bottom: 20px;
 }
 .tblForm
 {
@@ -353,7 +354,7 @@ hr
 }
 .RegisterBtn
 {
-    width: 200px; border: 0; outline: none;
+    max-width: 400px; width: 100%; border: 0; outline: none; margin: 0 auto;
 }
 .comingSoon
 {
@@ -575,7 +576,7 @@ hr
         width: 85%;
         max-width: 960px;
         margin: 0 auto;
-        padding: 40px 20px 40px 20px;
+        padding: 20px 20px 40px 20px;
         border: 0;
     }
     .Content .Split
