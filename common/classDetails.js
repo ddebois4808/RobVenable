@@ -1,10 +1,10 @@
 function StudySkills1Dates() {
     return [
         '-- Select One --',
-        'July 14 - 17, 2:00pm - 3:30pm',
-        'July 14 - 17, 4:00pm - 5:30pm',
-        'July 21 - 24, 2:00pm - 3:30pm',
-        'July 21 - 24, 4:00pm - 5:30pm',
+        'July 13 - 16, 2:00pm - 3:30pm',
+        'July 13 - 16, 4:00pm - 5:30pm',
+        'July 20 - 23, 2:00pm - 3:30pm',
+        'July 20 - 23, 4:00pm - 5:30pm',
     ]
 }
 
@@ -23,8 +23,8 @@ function HighSchoolDates() {
 function ParentWorkshopDates() {
     return [
         '-- Select One --',
-        'Thursday, July 24 (6:00pm - 7:30pm)',
-        'Tuesday, July 29 (6:00pm - 7:30pm)',
+        'Thursday, July 23 (6:00pm - 7:30pm)',
+        'Tuesday, July 28 (6:00pm - 7:30pm)',
         'Not Attending',
     ]
 }
@@ -37,7 +37,7 @@ function StudySkills1Price()
 function StudySkills2Price()
 {
     let today = new Date().getTime();
-    let priceExpire = new Date('06/01/2025').getTime();
+    let priceExpire = new Date('06/01/2026').getTime();
     return today > priceExpire ? '165.00' : '150.00'
 }
 
@@ -48,5 +48,5 @@ function HighSchoolPrice()
 
 function SchoolYear()
 {
-    return '2025'
+    return '2026'
 }
